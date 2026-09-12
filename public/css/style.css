@@ -1,0 +1,25 @@
+/* Small global tweaks that go beyond plain Tailwind utility classes. */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Nicer default focus ring for keyboard users across the app */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid #ef4444;
+  outline-offset: 2px;
+}
+
+/* Prevents layout shift/overflow from very long, unbroken words
+   (e.g. long location names) on small screens. */
+h1, h2, h3, p {
+  overflow-wrap: anywhere;
+}
